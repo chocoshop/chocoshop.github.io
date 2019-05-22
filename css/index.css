@@ -113,7 +113,7 @@ header {
       text-align: left; } }
   .about__right .skill .skill__list {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-align: center;
     flex-direction: row; }
@@ -129,9 +129,6 @@ header {
         margin-top: 15px; } }
     .about__right .hobby__list {
       margin-top: 15px; }
-      @media screen and (max-width: 768px) {
-        .about__right .hobby__list {
-          text-align: center; } }
       @media screen and (max-width: 340px) {
         .about__right .hobby__list {
           text-align: left; } }

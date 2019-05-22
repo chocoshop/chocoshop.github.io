@@ -123,7 +123,7 @@ header {
         text-align: left;
       }
       .skill__list {
-        @include flex-center;
+        @include flex-center($justify: left);
         flex-direction: row;
         &__item {
           display: inline-block;
@@ -140,9 +140,6 @@ header {
       }
       &__list {
         margin-top: 15px;
-        @include mq(medium) {
-          text-align: center;
-        }
         @include mq(xsmall) {
           text-align: left;
         }
