@@ -73,7 +73,7 @@ header {
     text-align: center;
     border-bottom: 5px $green solid;
     padding-bottom: 5px;
-    width: 100px;
+    width: 120px;
     margin: auto;
   }
   &__wrap {
@@ -125,7 +125,7 @@ header {
       #skill {
         border-bottom: $blue solid 3px;
         padding-top: 3px;
-        width: 200px;
+        width: 250px;
       }
       .skill__list {
         @include flex-center($justify: left);
@@ -146,7 +146,7 @@ header {
       #hobby {
         border-bottom: $red solid 3px;
         padding-top: 3px;
-        width: 40px;
+        width: 60px;
       }
       &__list {
         margin-top: 15px;
