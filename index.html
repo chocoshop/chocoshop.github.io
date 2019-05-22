@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,73 @@
     <title>Kiharuのポートフォリオ</title>
 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
+
 <body>
-    <main class="WEB_GL"></main>
+    <header>
+        <h2>いしかわのポートフォリオ </h2>
+        <div class="nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main class="WEB_GL">
+        <h1>My Portfolio</h1>
+        <section class="grid_area">
+            <span id="item1"></span>
+            <span id="item2"></span>
+            <span id="item3"></span>
+            <span id="item4"></span>
+        </section>
+    </main>
 
-    <main class="about"></main>
+    <main class="about">
+        <h2 id="INTRODUCTION">自己紹介</h2>
+        <div class="about__wrap">
+            <section class="about__left">
+                <img src="img/myIcon.jpg" alt="">
+                <div class="about__left__text">
+                    <h3>いしかわ</h3>
+                    <a href="https://twitter.com/kihagk0329">
+                        <h4>Twitter: kihagmk0329</h4>
+                    </a>
+                </div>
+            </section>
+            <section class="about__right">
+                <div class="skill">
+                    <h3>スキル <span style="font-size:smaller">(勉強中のもの含む)</span></h3>
+                    <ul class="skill__list">
+                        <li class="skill__list__item"><i class="fab fa-html5"></i></li>
+                        <li class="skill__list__item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="skill__list__item"><i class="fab fa-node-js"></i></li>
+                        <li class="skill__list__item"><i class="fab fa-react"></i></li>
+                    </ul>
+                </div>
+                <div class="hobby">
+                    <h3>趣味</h3>
+                    <ul class="hobby__list">
+                        <span class="hobby__list__item">お酒/スポーツ/海外旅行/植林/睡眠</span>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
 
-    <main class="form"></main>
+    <main class="form">
+        <h2 id="FORM">お問い合わせ</h2>
+        <div class="form__content">
+                <a href="https://twitter.com/kihagk0329">
+                    <h3>Twitter: kihagmk0329</h3>
+                </a>
+        </div>
+    </main>
+
+    <footer>
+        <h2>フッター！！！</h2>
+    </footer>
 </body>
+
 </html>

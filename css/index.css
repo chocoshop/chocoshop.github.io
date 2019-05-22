@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Doughnut-Regular.ttf";
+  src: url("../font/Doughnut-Regular.ttf") format("woff"); }
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100%;
+  font-family: "Hiragino Maru Gothic ProN"; }
+
+header {
+  height: 50px;
+  padding: 0.5rem 0 0 1rem;
+  background-color: #58be89;
+  color: white;
+  font-family: "Hiragino Maru Gothic ProN"; }
+
+.WEB_GL {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  .WEB_GL h1 {
+    font-family: "Doughnut-Regular.ttf";
+    font-size: 40px; }
+  .WEB_GL .grid_area {
+    display: grid;
+    display: -moz-grid;
+    display: -webkit-grid;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    grid-template-rows: repeat(auto-fill, 50px);
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-auto-flow: dense;
+    justify-content: center;
+    z-index: -999;
+    opacity: 0.8; }
+  .WEB_GL #item1 {
+    grid-area: 3 / 2;
+    background-color: #40aaef; }
+  .WEB_GL #item2 {
+    grid-area: 3 / 3;
+    background-color: #fba848; }
+  .WEB_GL #item3 {
+    grid-area: 3 / 4;
+    background-color: #f27398; }
+  .WEB_GL #item4 {
+    grid-area: 3 / 5;
+    background-color: #58be89; }
+
+.about {
+  width: 95%;
+  margin: auto; }
+  @media screen and (max-width: 768px) {
+    .about {
+      width: 70%; } }
+  .about #INTRODUCTION {
+    text-align: center;
+    border-bottom: 5px #58be89 solid;
+    padding-bottom: 5px;
+    width: 100px;
+    margin: auto; }
+  .about__wrap {
+    display: grid;
+    display: -moz-grid;
+    display: -webkit-grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 10px; }
+    @media screen and (max-width: 768px) {
+      .about__wrap {
+        display: block;
+        text-align: center;
+        margin-top: 30px; } }
+  @media screen and (max-width: 768px) {
+    .about__left {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      text-align: center; } }
+  .about__left img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .about__left img {
+        width: 65px;
+        height: 65px; } }
+  .about__left__text {
+    text-align: center;
+    margin-top: 1rem; }
+    @media screen and (max-width: 768px) {
+      .about__left__text {
+        text-align: left;
+        margin-left: 20px; } }
+  @media screen and (max-width: 768px) {
+    .about__right {
+      margin-top: 30px; } }
+  @media screen and (max-width: 768px) {
+    .about__right .skill {
+      text-align: left; } }
+  .about__right .skill .skill__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row; }
+    .about__right .skill .skill__list__item {
+      display: inline-block;
+      margin: 0.5rem;
+      font-size: 45px; }
+  .about__right .hobby {
+    margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .about__right .hobby {
+        text-align: left;
+        margin-top: 15px; } }
+    .about__right .hobby__list {
+      margin-top: 15px; }
+      @media screen and (max-width: 768px) {
+        .about__right .hobby__list {
+          text-align: center; } }
+      @media screen and (max-width: 340px) {
+        .about__right .hobby__list {
+          text-align: left; } }
+
+.form {
+  width: 95%;
+  margin: auto;
+  margin-top: 60px; }
+  @media screen and (max-width: 768px) {
+    .form {
+      width: 70%; } }
+  .form #FORM {
+    text-align: center;
+    border-bottom: 5px #58be89 solid;
+    padding-bottom: 5px;
+    width: 200px;
+    margin: auto; }
+  .form__content {
+    text-align: center;
+    margin-top: 30px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #58be89;
+  height: 100px;
+  text-align: center;
+  margin-top: 100px; }
+
+/*# sourceMappingURL=index.css.map */

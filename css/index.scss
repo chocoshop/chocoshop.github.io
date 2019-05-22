@@ -1,3 +1,180 @@
----
----
+// ---
+// ---
+@import "./mixin.scss";
 
+$Doughnut: "Doughnut-Regular.ttf";
+$Hiragino: "Hiragino Maru Gothic ProN";
+$green: #58be89; //メインカラー
+$blue: #40aaef;
+$yellow: #fba848;
+$red: #f27398;
+
+@include fontface($font-family: $Doughnut);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  font-family: $Hiragino;
+}
+header {
+  height: 50px;
+  padding: 0.5rem 0 0 1rem;
+  background-color: $green;
+  color: white;
+  font-family: $Hiragino;
+}
+.WEB_GL {
+  @include FullWindow;
+  // background-image: url(../img/FH040028.JPG);
+  @include flex-center();
+  position: relative;
+  h1 {
+    font-family: $Doughnut;
+    font-size: 40px;
+  }
+  .grid_area {
+    @include ValueSetPrefix(display, grid);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    grid-template-rows: repeat(auto-fill, 50px);
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-auto-flow: dense;
+    justify-content: center;
+    z-index: -999;
+    opacity: 0.8;
+  }
+  #item1 {
+    grid-area: 3 / 2;
+    background-color: $blue;
+  }
+  #item2 {
+    grid-area: 3 / 3;
+    background-color: $yellow;
+  }
+  #item3 {
+    grid-area: 3 / 4;
+    background-color: $red;
+  }
+  #item4 {
+    grid-area: 3 / 5;
+    background-color: $green;
+  }
+}
+.about {
+  @include content-width;
+  @include mq(medium) {
+    width: 70%;
+  }
+  #INTRODUCTION {
+    text-align: center;
+    border-bottom: 5px $green solid;
+    padding-bottom: 5px;
+    width: 100px;
+    margin: auto;
+  }
+  &__wrap {
+    @include ValueSetPrefix(display, grid);
+    grid-template-rows: 400px;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    @include mq(medium) {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  &__left {
+    @include mq(medium) {
+      @include flex-center($justify: left);
+    }
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      display: block;
+      @include mq(medium) {
+        width: 65px;
+        height: 65px;
+      }
+    }
+    &__text {
+      text-align: center;
+      margin-top: 1rem;
+      @include mq(medium) {
+        text-align: left;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__right {
+    @include mq(medium) {
+      margin-top: 30px;
+    }
+    .skill {
+      @include mq(medium) {
+        text-align: left;
+      }
+      .skill__list {
+        @include flex-center;
+        flex-direction: row;
+        &__item {
+          display: inline-block;
+          margin: 0.5rem;
+          font-size: 45px;
+        }
+      }
+    }
+    .hobby {
+      margin-top: 30px;
+      @include mq(medium) {
+        text-align: left;
+        margin-top: 15px;
+      }
+      &__list {
+        margin-top: 15px;
+        @include mq(medium) {
+          text-align: center;
+        }
+        @include mq(xsmall) {
+          text-align: left;
+        }
+        &__item {
+        }
+      }
+    }
+  }
+}
+.form {
+  @include content-width;
+  margin-top: 60px;
+  @include mq(medium) {
+    width: 70%;
+  }
+  #FORM {
+    text-align: center;
+    border-bottom: 5px $green solid;
+    padding-bottom: 5px;
+    width: 200px;
+    margin: auto;
+  }
+  &__content {
+      text-align: center;
+      margin-top: 30px;
+  }
+}
+
+footer {
+    @include flex-center;
+    background-color: $green;
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
