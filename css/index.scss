@@ -75,6 +75,9 @@ header {
     padding-bottom: 5px;
     width: 120px;
     margin: auto;
+    @include mq(sp) {
+        margin: initial;
+    }
   }
   &__wrap {
     @include ValueSetPrefix(display, grid);
@@ -103,6 +106,7 @@ header {
       @include mq(medium) {
         width: 65px;
         height: 65px;
+        margin: initial;
       }
     }
     &__text {
@@ -169,7 +173,7 @@ header {
     text-align: center;
     border-bottom: 5px $green solid;
     padding-bottom: 5px;
-    width: 200px;
+    width: 180px;
     margin: auto;
   }
   &__content {

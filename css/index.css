@@ -67,6 +67,9 @@ header {
     padding-bottom: 5px;
     width: 120px;
     margin: auto; }
+    @media screen and (max-width: 600px) {
+      .about #INTRODUCTION {
+        margin: initial; } }
   .about__wrap {
     display: grid;
     display: -moz-grid;
@@ -97,7 +100,8 @@ header {
     @media screen and (max-width: 768px) {
       .about__left img {
         width: 65px;
-        height: 65px; } }
+        height: 65px;
+        margin: initial; } }
   .about__left__text {
     text-align: center;
     margin-top: 1rem; }
@@ -152,7 +156,7 @@ header {
     text-align: center;
     border-bottom: 5px #58be89 solid;
     padding-bottom: 5px;
-    width: 200px;
+    width: 180px;
     margin: auto; }
   .form__content {
     text-align: center;
