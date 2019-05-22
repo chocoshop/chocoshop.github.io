@@ -122,16 +122,20 @@ header {
     border-bottom: #40aaef solid 3px;
     padding-top: 3px;
     width: 250px; }
-  .about__right .skill .skill__list {
+  .about__right .skill__list {
     display: flex;
     justify-content: left;
     align-items: center;
     text-align: center;
     flex-direction: row; }
-    .about__right .skill .skill__list__item {
+    .about__right .skill__list__item {
       display: inline-block;
       margin: 0.5rem;
       font-size: 45px; }
+  .about__right .skill__all {
+    width: 100%;
+    display: block;
+    word-break: break-all; }
   .about__right .hobby {
     margin-top: 30px; }
     @media screen and (max-width: 768px) {
@@ -159,26 +163,22 @@ header {
     text-align: center;
     border-bottom: solid 5px #58be89;
     padding-bottom: 5px;
-    width: 170px;
+    width: 165px;
     margin-top: 30px; }
-    @media screen and (max-width: 600px) {
-      .output #OUTPUT {
-        margin: initial; } }
   .output__list {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    margin: 30px; }
+    margin: 30px 0; }
     @media screen and (max-width: 600px) {
       .output__list {
         margin: initial; } }
     .output__list__item {
       width: 400px;
-      height: 200px;
-      margin: 30px; }
-      @media screen and (max-width: 600px) {
+      margin: 30px 10px; }
+      @media screen and (max-width: 768px) {
         .output__list__item {
           width: 100%;
           margin: 30px 0; } }
