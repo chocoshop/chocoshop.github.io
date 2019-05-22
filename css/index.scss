@@ -122,6 +122,11 @@ header {
       @include mq(medium) {
         text-align: left;
       }
+      #skill {
+        border-bottom: $blue solid 3px;
+        padding-top: 3px;
+        width: 200px;
+      }
       .skill__list {
         @include flex-center($justify: left);
         flex-direction: row;
@@ -137,6 +142,11 @@ header {
       @include mq(medium) {
         text-align: left;
         margin-top: 15px;
+      }
+      #hobby {
+        border-bottom: $red solid 3px;
+        padding-top: 3px;
+        width: 40px;
       }
       &__list {
         margin-top: 15px;
@@ -163,15 +173,15 @@ header {
     margin: auto;
   }
   &__content {
-      text-align: center;
-      margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
   }
 }
 
 footer {
-    @include flex-center;
-    background-color: $green;
-    height: 100px;
-    text-align: center;
-    margin-top: 100px;
+  @include flex-center;
+  background-color: $green;
+  height: 100px;
+  text-align: center;
+  margin-top: 100px;
 }

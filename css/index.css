@@ -111,6 +111,10 @@ header {
   @media screen and (max-width: 768px) {
     .about__right .skill {
       text-align: left; } }
+  .about__right .skill #skill {
+    border-bottom: #40aaef solid 3px;
+    padding-top: 3px;
+    width: 200px; }
   .about__right .skill .skill__list {
     display: flex;
     justify-content: left;
@@ -127,6 +131,10 @@ header {
       .about__right .hobby {
         text-align: left;
         margin-top: 15px; } }
+    .about__right .hobby #hobby {
+      border-bottom: #f27398 solid 3px;
+      padding-top: 3px;
+      width: 40px; }
     .about__right .hobby__list {
       margin-top: 15px; }
       @media screen and (max-width: 340px) {
