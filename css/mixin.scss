@@ -54,4 +54,7 @@ $set-prefix: "", -moz-, -webkit-;
 @mixin content-width {
     width: 95%;
     margin: auto;
+    @include mq(medium) {
+        width: 70%;
+      }
 }

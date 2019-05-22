@@ -9,6 +9,9 @@ body {
   width: 100%;
   font-family: "Hiragino Maru Gothic ProN"; }
 
+a {
+  color: #58be89; }
+
 header {
   height: 50px;
   padding: 0.5rem 0 0 1rem;
@@ -145,10 +148,67 @@ header {
         .about__right .hobby__list {
           text-align: left; } }
 
+.output {
+  width: 95%;
+  margin: auto; }
+  @media screen and (max-width: 768px) {
+    .output {
+      width: 70%; } }
+  .output #OUTPUT {
+    margin: auto;
+    text-align: center;
+    border-bottom: solid 5px #58be89;
+    padding-bottom: 5px;
+    width: 170px;
+    margin-top: 30px; }
+    @media screen and (max-width: 600px) {
+      .output #OUTPUT {
+        margin: initial; } }
+  .output__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 30px; }
+    @media screen and (max-width: 600px) {
+      .output__list {
+        margin: initial; } }
+    .output__list__item {
+      width: 400px;
+      height: 200px;
+      margin: 30px; }
+      @media screen and (max-width: 600px) {
+        .output__list__item {
+          width: 100%;
+          margin: 30px 0; } }
+      .output__list__item a {
+        text-decoration: none;
+        color: #000; }
+      .output__list__item__img {
+        width: 400px;
+        height: 200px;
+        border: #58be89 solid 1px;
+        border-radius: 10px;
+        opacity: 0.6;
+        background: url(../img/no_image.png); }
+        @media screen and (max-width: 600px) {
+          .output__list__item__img {
+            width: 100%;
+            height: 150px; } }
+      .output__list__item__tech {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        font-size: 20px; }
+
 .form {
   width: 95%;
   margin: auto;
   margin-top: 60px; }
+  @media screen and (max-width: 768px) {
+    .form {
+      width: 70%; } }
   @media screen and (max-width: 768px) {
     .form {
       width: 70%; } }
