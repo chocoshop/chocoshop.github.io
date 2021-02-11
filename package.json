@@ -4,7 +4,8 @@
   "description": "my portfolio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,20 @@
   },
   "homepage": "https://github.com/chocoshop/chocoshop.github.io#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "npm": "^7.5.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-spring": "^8.0.27",
+    "start": "^5.1.0",
     "webpack": "^5.21.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack-cli": "^4.5.0"
   }
 }
