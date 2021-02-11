@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/chocoshop/chocoshop.github.io/issues"
   },
-  "homepage": "https://github.com/chocoshop/chocoshop.github.io#readme"
+  "homepage": "https://github.com/chocoshop/chocoshop.github.io#readme",
+  "dependencies": {
+    "webpack": "^5.21.2"
+  }
 }
