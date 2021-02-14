@@ -1,10 +1,17 @@
-import {useSpring, animated} from 'react-spring';
 import reactDOM from 'react-dom';
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
+import Click from './click';
+import Transiti from './transition';
 
 function App() {
-    const props = useSpring({opacity: 1, from: {opacity: 0}});
-    return <animated.div style={props}>Hello</animated.div>;
+    return (
+    <div>
+        <Click/>
+        <Transiti/>
+    </div>
+    )
+
 }
 
 const app = document.getElementById('app');

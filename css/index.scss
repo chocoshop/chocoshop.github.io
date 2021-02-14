@@ -4,6 +4,8 @@
 
 $Doughnut: "Doughnut-Regular.ttf";
 $Aldrich: "Aldrich-Regular.ttf";
+$Neon1: "beon-webfont.ttf";
+$Neon2: "neon2.ttf";
 $Hiragino: "Hiragino Maru Gothic ProN";
 $green: #58be89; //メインカラー
 $blue: #40aaef;
@@ -12,6 +14,8 @@ $red: #f27398;
 
 @include fontface($font-family: $Doughnut);
 @include fontface($font-family: $Aldrich);
+@include fontface($font-family: $Neon2);
+
 
 * {
   padding: 0;
@@ -19,7 +23,8 @@ $red: #f27398;
 }
 body {
   width: 100%;
-  font-family: $Hiragino;
+  // font-family: $Hiragino;
+  font-family: $Neon2;
 }
 a {
   color: $green;

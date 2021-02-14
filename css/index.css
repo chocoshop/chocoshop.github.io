@@ -4,13 +4,16 @@
 @font-face {
   font-family: "Aldrich-Regular.ttf";
   src: url("../font/Aldrich-Regular.ttf") format("woff"); }
+@font-face {
+  font-family: "neon2.ttf";
+  src: url("../font/neon2.ttf") format("woff"); }
 * {
   padding: 0;
   margin: 0; }
 
 body {
   width: 100%;
-  font-family: "Hiragino Maru Gothic ProN"; }
+  font-family: "neon2.ttf"; }
 
 a {
   color: #58be89; }
