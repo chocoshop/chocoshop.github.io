@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Transition } from 'react-spring/renderprops'
 
-export default function Transi() {
+export default function Transiti() {
     const [toggle, set] = useState(false);
     return(
         <div onClick={() => set(!toggle)}>
