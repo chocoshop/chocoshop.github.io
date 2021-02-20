@@ -1,5 +1,4 @@
-import { animated, useSpring, config } from 'react-spring';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Text from './text';
 
@@ -12,11 +11,17 @@ const Wrapper = styled.div`
     color: #61F4F9;
     font-size: 6rem;
     text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 20px;
+    background: #080121;
 `;
 
 export default function ClickMe(props) {
+    const next = () => {
+        setInterval(() => {
+            props.nextPage({page: 1});
+        }, 1000);
+    }
     return (
-        <Wrapper onClick={() => props.nextPage({page: 1})}>
+        <Wrapper onClick={() => next()}>
             CL<Text>I</Text>CK ME
         </Wrapper>
     )
