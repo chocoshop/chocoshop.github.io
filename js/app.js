@@ -4,23 +4,29 @@ import { useSpring, animated } from 'react-spring';
 import ClickMe from './clickme';
 import styled from 'styled-components';
 import Door from './door/door';
+import Frame from './frame';
+import Profile from './profile/profile';
 
 const Wrapper = styled.main`
-    postion: relative;
+    position: relative;
     width: 100%;
     height: 100%;
 `;
 
 function App() {
     const [state, nextPage] = useState({
-        page: 0
+        page: 1
     });
     return (
     <Wrapper>
+        {/* page0 */}
         {state.page === 0 && 
             <ClickMe nextPage={nextPage} />
         }
-        <Door toggle={state.page === 1 ? true : false} />
+        {/* page1 */}
+        {/* <Door toggle={state.page === 1 ? true : false} /> */}
+        <Frame toggle={state.page === 1 ? true : false}  />
+        <Profile />
     </Wrapper>
     )
 }

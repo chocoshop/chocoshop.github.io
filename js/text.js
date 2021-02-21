@@ -16,6 +16,6 @@ export default function Text(props) {
         }
     })
     return(
-        <Container config={{ velocity: 100, delay: Math.random() * 4500 }} >{styles => <div style={styles}>{props.children}</div>}</Container>
+        <Container config={{ velocity: 100, delay: Math.random() * 4000 }} >{styles => <div style={styles}>{props.children}</div>}</Container>
     )
 }
