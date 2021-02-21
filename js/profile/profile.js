@@ -10,9 +10,6 @@ import P from "./p";
 import * as easings from 'd3-ease';
 import MiniWindow from "./miniwindow";
 import Scene from "./scene";
-import ClickMe from "../clickme";
-import Text from "../text";
-import Door from "../door/door";
 
 const Section = styled.section`
     width: 100%;
@@ -75,8 +72,8 @@ export default function ({toggle}) {
                     </div> */}
                     <Content>
                         {/* <Title>Kiharu<br />Ishikawa</Title> */}
-                        <Title>ここ<br />名前かなぁ</Title>
-                        <P width='80%'>ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文。飽きた</P>
+                        <Title>Hola!<br/>ここに、<br />名前入れますか</Title>
+                        <P width='80%'>もうこの辺で作るの飽きてる。ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文。飽きた</P>
                     </Content>
                     <Content>
                         <MiniWindow>
@@ -113,10 +110,10 @@ export default function ({toggle}) {
                     </Card>
                     <Card toggle={menu[3]}>
                         <H2>CopyLight</H2>
-                        <P>本ページでは表示フォントに「Beon」(http://sozoo.fr) を使用しています。
-                        本ページでは表示フォントに「大正活字っぽい？フォントT5」(http://sozoo.fr) を使用しています。
-                            Licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)
-                            </P>
+                        <P>本ページでは表示フォントに「Beon」<a href="http://sozoo.fr" target="_black">(http://sozoo.fr)</a> を使用しています。<br />
+                            本ページでは表示フォントに「大正活字っぽい？フォントT5」<a href="https://nukosuki.booth.pm/items/738177" target="_black">(https://nukosuki.booth.pm/items/738177)</a> を使用しています。<br />
+                            Licensed under SIL Open Font License 1.1 <a href="http://scripts.sil.org/OFL" target="_black">(http://scripts.sil.org/OFL)</a>
+                        </P>
                     </Card>
                 </Content>
             </Wrapper>

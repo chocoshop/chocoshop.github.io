@@ -7,7 +7,7 @@ const Window = styled.div`
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 15px;
 `
 
 export default function MiniWindow({children}) {
