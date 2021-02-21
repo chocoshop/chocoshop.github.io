@@ -12,7 +12,7 @@ const Outer = styled.div`
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: -2;
 `;
 
 export default function Frame({children, toggle}) {

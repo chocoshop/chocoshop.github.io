@@ -8,7 +8,7 @@ export default function Right({toggle}) {
         enter: { transform: 'translateX(0%) rotateY(0deg)' },
         leave: { transform: 'translateX(100%) rotateY(-180deg', background: '#232946'},
         config: {
-            duration: 1000,
+            duration: 800,
             easing: easings.easeCubic
         }
     })

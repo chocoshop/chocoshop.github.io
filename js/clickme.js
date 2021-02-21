@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from './text';
+import { pallete } from './pallete/pallete';
 
 const Wrapper = styled.div`
     display: flex;
@@ -11,8 +12,10 @@ const Wrapper = styled.div`
     color: #61F4F9;
     font-size: 6rem;
     text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 20px;
-    background: #080121;
-    font-family: "neon2.ttf"
+    background: ${pallete.black};
+    font-family: "neon2.ttf";
+    position: absolute;
+    z-index: 4;
 `;
 
 export default function ClickMe(props) {

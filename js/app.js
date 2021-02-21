@@ -24,9 +24,10 @@ function App() {
             <ClickMe nextPage={nextPage} />
         }
         {/* page1 */}
-        {/* <Door toggle={state.page === 1 ? true : false} /> */}
-        <Frame toggle={state.page === 1 ? true : false}  />
-        <Profile />
+        {/* <Door toggle={state.page === 1} /> */}
+        <Frame toggle={state.page === 1}  />
+        <Profile toggle={state.page === 1} />
+        
     </Wrapper>
     )
 }
