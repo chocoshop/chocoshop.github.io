@@ -2,7 +2,7 @@ import React from 'react';
 import { animated, useSpring } from 'react-spring';
 import { pallete } from '../pallete/pallete';
 
-export default function Box({width = '100%', height = 50, children, onClick}) {
+export default function Box({width = '85%', height = 50, children, onClick}) {
     const style = useSpring({
         width,
         height,
