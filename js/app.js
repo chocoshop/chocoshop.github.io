@@ -15,16 +15,16 @@ const Wrapper = styled.main`
 
 function App() {
     const [state, nextPage] = useState({
-        page: 1
+        page: 0
     });
     return (
     <Wrapper>
         {/* page0 */}
         {state.page === 0 && 
-            <ClickMe nextPage={nextPage} />
+            <ClickMe nextPage={nextPage} pause={false} />
         }
         {/* page1 */}
-        {/* <Door toggle={state.page === 1} /> */}
+        <Door toggle={state.page === 1} />
         <Frame toggle={state.page === 1}  />
         <Profile toggle={state.page === 1} />
         
