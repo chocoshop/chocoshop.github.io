@@ -12,13 +12,14 @@ const Wrapper = styled.div`
     font-size: 6rem;
     text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 20px;
     background: #080121;
+    font-family: "neon2.ttf"
 `;
 
 export default function ClickMe(props) {
     const next = () => {
         setInterval(() => {
             props.nextPage({page: 1});
-        }, 1000);
+        }, 500);
     }
     return (
         <Wrapper onClick={() => next()}>
