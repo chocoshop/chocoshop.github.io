@@ -16,6 +16,7 @@ const Wrapper = styled.div`
     font-family: "taisyo.ttf";
     // font-family: "Neon.ttf";
     z-index: 4;
+    border-radius: 15px;
 `;
 
 export default function Scene() {
