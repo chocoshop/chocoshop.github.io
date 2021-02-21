@@ -3,7 +3,14 @@ import React from 'react';
 
 export default function Text(props) {
     const Container = Keyframes.Spring(async next => {
-        while(true) {
+        if (props.pause) {
+            await next({
+                from: {opacity: 1},
+                opacity: 1,
+            });
+            return;
+        };
+        while(!props.pause) {
             await next({
                 from: {opacity: 0.3},
                 opacity: 0.4,

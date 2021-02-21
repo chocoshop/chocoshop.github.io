@@ -8,6 +8,11 @@ import Card from "./card";
 import H2 from "./h2";
 import P from "./p";
 import * as easings from 'd3-ease';
+import MiniWindow from "./miniwindow";
+import Scene from "./scene";
+import ClickMe from "../clickme";
+import Text from "../text";
+import Door from "../door/door";
 
 const Section = styled.section`
     width: 100%;
@@ -15,7 +20,7 @@ const Section = styled.section`
     position: absolute;
     left: 0;
     top: 0;
-    padding: 45px;
+    padding: 30px 40px;
     z-index: 1;
     box-sizing: border-box;
 `;
@@ -39,7 +44,7 @@ const Content = styled.div`
 
 const Title = styled.h1`
     font-size: 4rem;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     z-index: -11;
     color: ${pallete.navy};
 `
@@ -69,20 +74,24 @@ export default function ({toggle}) {
                         </Circle>
                     </div> */}
                     <Content>
-                        <Title>Kiharu<br />Ishikawa</Title>
+                        {/* <Title>Kiharu<br />Ishikawa</Title> */}
+                        <Title>ここ<br />名前かなぁ</Title>
                         <P width='80%'>ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文。飽きた</P>
                     </Content>
                     <Content>
-                        <H2>Info</H2>
-                        <Box onClick={() => set([true, false, false, false])} >私について</Box>
-                        <Box onClick={() => set([false, true, false, false])}>このページについて</Box>
-                        <Box onClick={() => set([false, false, true, false])}>ToDo</Box>
-                        <Box onClick={() => set([false, false, false, true])}>CopyLight</Box>
+                        <MiniWindow>
+                            <P>tap to turn light off or on</P>
+                            <Scene />
+                        </MiniWindow>
                     </Content>
                 </Wrapper>
                 <Wrapper>
                 <Content>
-                    <Title>ここ<br />なんか動くやつ</Title>
+                    <H2>Info</H2>
+                    <Box onClick={() => set([true, false, false, false])} >私について</Box>
+                    <Box onClick={() => set([false, true, false, false])}>このページについて</Box>
+                    <Box onClick={() => set([false, false, true, false])}>ToDo</Box>
+                    <Box onClick={() => set([false, false, false, true])}>CopyLight</Box>
                 </Content>
                 <Content>
                     <Card toggle={menu[0]} >
@@ -105,6 +114,7 @@ export default function ({toggle}) {
                     <Card toggle={menu[3]}>
                         <H2>CopyLight</H2>
                         <P>本ページでは表示フォントに「Beon」(http://sozoo.fr) を使用しています。
+                        本ページでは表示フォントに「大正活字っぽい？フォントT5」(http://sozoo.fr) を使用しています。
                             Licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)
                             </P>
                     </Card>
