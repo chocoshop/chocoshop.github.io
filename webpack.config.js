@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     watch: true,
-    mode: 'development',
+    mode: process.env.WEBPACK_MODE,
     entry: './js/app.js',
     output: {
         filename: 'bundle.js',
