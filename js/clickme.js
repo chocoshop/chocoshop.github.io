@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 export default function ClickMe(props) {
     const next = () => {
-        setInterval(() => {
+        setTimeout(() => {
             props.nextPage({page: 1});
         }, 500);
     }
