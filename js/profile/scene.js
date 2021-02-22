@@ -9,7 +9,8 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 350px;
+    height: 100%;
+    min-height: 200px;
     color: #61F4F9;
     font-size: 6rem;
     text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 20px;
