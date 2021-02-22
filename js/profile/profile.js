@@ -99,7 +99,7 @@ export default function ({toggle}) {
                     </Content>
                     <Content>
                         <MiniWindow>
-                            <P>・tap to turn light off or on</P>
+                            <P>Tap to animate</P>
                             <Scene />
                         </MiniWindow>
                     </Content>
