@@ -42,7 +42,7 @@ const Content = styled.div`
     border-radius: 15px;
     width: 50%;
     height: 100%;
-    padding: 3rem;
+    padding: 2rem;
     z-index: 1;
     box-sizing: border-box;
     ${media.lessThan('tablet')`
