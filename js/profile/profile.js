@@ -10,24 +10,32 @@ import P from "./p";
 import * as easings from 'd3-ease';
 import MiniWindow from "./miniwindow";
 import Scene from "./scene";
+import { media } from "../mediaquery/breakpoints";
+import useWindowDimensions from "../hooks/window";
 
 const Section = styled.section`
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    height: ${({theme}) => theme.height < 800 ? '100%' : '100vh'};
     padding: 30px 40px;
     z-index: 1;
     box-sizing: border-box;
+    ${media.lessThan('medium')`
+        padding: 1rem;
+        position: relative;
+        height: 100%;
+    `}
 `;
 
 const Wrapper = styled.div`
     width: 100%;
     height: 50%;
     display: flex;
+    align-items: center;
     z-index: 1;
     box-sizing: border-box;
+    ${media.lessThan('medium')`
+        display: block;
+    `}
 `;
 
 const Content = styled.div`
@@ -37,6 +45,15 @@ const Content = styled.div`
     padding: 3rem;
     z-index: 1;
     box-sizing: border-box;
+    ${media.lessThan('tablet')`
+        padding: 2.0rem 1.0rem .5rem 2.0rem;
+        width: 100%;
+    `}
+    ${media.lessThan('medium')`
+        width: 100%;
+        padding: 1.0rem 2.5rem .5rem 2.5rem;
+        margin: 15px 0;
+    `}
 `;
 
 const Title = styled.h1`
@@ -44,6 +61,9 @@ const Title = styled.h1`
     letter-spacing: 6px;
     z-index: -11;
     color: ${pallete.navy};
+    ${media.lessThan('medium')`
+        font-size: 3rem;
+    `}
 `
 
 export default function ({toggle}) {
@@ -51,6 +71,7 @@ export default function ({toggle}) {
     const set = props => {
         setMenu(props);
     }
+    const {height} = useWindowDimensions();
     return (
         <animated.div style={useSpring({
             from: {opacity: 0.8},
@@ -61,7 +82,7 @@ export default function ({toggle}) {
                 easing: easings.easeCubicIn,
             }
         })}>
-            <Section>
+            <Section theme={{height}}>
                 <Wrapper>
                     {/* <div style={{position: 'relative', width: '120px', height: '120px'}}>
                         <Circle size='100' position='absolute' radius='50%'  >
@@ -72,12 +93,13 @@ export default function ({toggle}) {
                     </div> */}
                     <Content>
                         {/* <Title>Kiharu<br />Ishikawa</Title> */}
-                        <Title>Hola!<br/>ここに、<br />名前入れますか</Title>
+                        <Title>Kiharu</Title>
+                        <H2>かっこいいサブタイ</H2>
                         <P width='80%'>もうこの辺で作るの飽きてる。ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文ここにかっこいい本文。飽きた</P>
                     </Content>
                     <Content>
                         <MiniWindow>
-                            <P>tap to turn light off or on</P>
+                            <P>・tap to turn light off or on</P>
                             <Scene />
                         </MiniWindow>
                     </Content>

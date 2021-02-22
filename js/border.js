@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { media } from './mediaquery/breakpoints';
 
 const Outer = styled.div`
     width: 100%;
@@ -11,6 +12,9 @@ const Outer = styled.div`
     padding: 18px;
     overflow: hidden;
     box-sizing: border-box;
+    ${media.lessThan('medium')`
+        padding: 15px;
+    `}
 `;
 
 const Inner = styled.div`

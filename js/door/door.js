@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     height: 100%;
     display: flex;
     z-index: 3;
+    overflow: hidden;
 `;
 
 export default function Door({toggle}) {

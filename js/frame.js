@@ -2,6 +2,7 @@ import React from 'react';
 import { useSpring, animated } from "react-spring";
 import styled from 'styled-components';
 import Border from './border';
+import { media } from './mediaquery/breakpoints';
 
 const Outer = styled.div`
     background: #F2D1C0;
@@ -13,6 +14,9 @@ const Outer = styled.div`
     position: absolute;
     top: 0;
     z-index: -2;
+    ${media.lessThan('medium')`
+        padding: 30px;
+    `}
 `;
 
 export default function Frame({children, toggle}) {
